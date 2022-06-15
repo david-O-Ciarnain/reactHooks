@@ -1,8 +1,12 @@
 *{
   box-sizing: border-box;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    
 
     margin: 0;
+}
+body{
+    background-color: #958e97;
 }
 
 
@@ -98,4 +102,42 @@
 
 .top {
     top: 0;
+}
+.feedback-form{
+    font-weight: 100;
+    font-size: 20px;
+    width: 100%;
+    
+}
+.feedback-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;
+    
+}
+.feedback-text-input{
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+}
+.feedback-textarea{
+    width: 50%;
+    height: 200px;
+    font-size: 20px;
+}
+
+.radio-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:40%;
+  width: 60%;
+    line-height: 2.5em;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
 }

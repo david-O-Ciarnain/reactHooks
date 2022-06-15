@@ -10,7 +10,6 @@ export default function App() {
         <div>
             <Header />
             <h1>
-           
                 <Meme/> 
                 <FeedBackForm /> 
             </h1>
