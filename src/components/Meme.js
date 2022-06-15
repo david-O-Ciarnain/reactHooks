@@ -18,7 +18,7 @@ export default function Meme(){
     },[])
 
    const handelChange = (event) => {
-    const {name,value,type} = event.target
+    const {name,value} = event.target
 
     setMemes(prevMeme => ({
         ...prevMeme,
@@ -40,33 +40,39 @@ export default function Meme(){
     const {topText,bottomText,randomImageUrl} = memes
     return (
         <div>
-            <div>
+            <div className="meme-form">
             <input
+            className="meme-form-input" 
             type="text"
             placeholder="top text" 
             name="topText"
             value={topText}
             onChange={handelChange}
             />
-            <input 
+            <input
+            className="meme.form-input" 
             type="text"
             placeholder="bottom text"
             name="bottomText"
             value={bottomText}
             onChange= {handelChange}
             />
-            <button
+            <button 
+            className="meme-form-image-button"
             onClick={getRanomImage}
             >
                 press for new images 
-            </button>
+            </button >
             </div>
+            <div className="meme-image-container">
             <img 
+            className="meme-image"
             src={randomImageUrl}
             alt="random meme"
             />
-            <p>{topText}</p>
-            <p>{bottomText}</p>
+            <p className="meme-text top">{topText}</p>
+            <p className="meme-text bottom">{bottomText}</p>
+            </div>
         </div>
     )
    
