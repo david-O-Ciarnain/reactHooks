@@ -94,7 +94,6 @@ export default function FeedBackForm(){
                 onChange={handelChange}
                 />
 
-
             </fieldset>
 
         </form>

@@ -10,9 +10,6 @@ export default function Header (){
         
     },[])
     
-    console.log(dogs)
-    
-
 return (
     <header className="header">
         <img

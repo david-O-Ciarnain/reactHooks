@@ -141,3 +141,14 @@ body{
     margin-top: 20px;
     background-color: white;
 }
+
+.show-feedback-button{
+    
+    font-size: 15px;
+    background-color: rgba(50, 50, 100, 0.1);
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+
+}
